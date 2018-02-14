@@ -7,4 +7,7 @@
 	<bean id="wish" class="com.sudhir.beans.WishMessage">
 		<property name="date" ref="dt"/>
 	</bean>
+	<bean id = "wish_constructor" class="com.sudhir.beans.WishGeneratorConstructorInjection">
+		<constructor-arg name="date"  ref="dt"/>
+	</bean>
 </beans>
